@@ -1,2 +1,3 @@
 # Responsive website for Vecta Corp. 
- Used Gulp and Syntactically Awesome Style Sheets (Sass)
+ Developed a responsive web page for Vecta Corporation using Gulp and Syntactically Awesome Style Sheets (Sass).
+ 
