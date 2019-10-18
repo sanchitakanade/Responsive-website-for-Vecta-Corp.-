@@ -1,0 +1,49 @@
+//Author: Sanchita Kanade
+//	File: _base.scss
+body        {
+            font-family: $font-body, 
+            sans-serif; font-size:1em;
+            line-height:2em;
+            @include backImage($body-background,0,0,repeat-x,$white); 
+            margin:0;
+        }
+main        {width:940px;margin:0 auto;padding:0 10px;}
+
+header      { 
+            width:inherit;
+            clear:both;
+            text-align:center;
+            padding-top:40px;
+            img {max-width:100%;height:auto;}
+
+            @for $item from 1 through length($heading-colors) {
+                h#{$item} {
+                    color: nth($heading-colors, $item);
+                    font-weight: nth($heading-font-weight, $item);
+                    font-size: nth($heading-font-size, $item);
+                    line-height:0;
+                }
+            }
+            h2 {margin-bottom:70px;}
+            h3 {margin-bottom:50px;}
+            }
+
+
+/* FOOTER */
+.greybar        {width:100%;height:90px;background:$light-grey;clear:both;padding-top:30px;}
+ footer         {width:100%;height:120px;background:$footer-background;text-align:center;color:$white;padding-top:50px;}
+.social-media   {
+                    margin:0 auto;
+                    width:165px;
+                    div       {float:left;margin-right:5px;}
+                    .one      {@include backImage($social-media-image,0,0);}
+                    .two 	  {@include backImage($social-media-image,-38px, 0);}
+                    .three    {@include backImage($social-media-image,-76px, 0);}
+                    .four 	  {@include backImage($social-media-image,-114px, 0);}
+                    a         {
+                                display:block;
+                                @include setWidth(159px,4,5px);
+                                height:36px;
+                                text-indent:-9999px;}
+                }
+
